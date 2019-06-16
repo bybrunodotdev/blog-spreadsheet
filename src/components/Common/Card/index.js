@@ -3,20 +3,24 @@ import PropTypes from 'prop-types';
 
 import { Container, Title, Description } from './styles';
 
-const Card = ({ imageURL }) => (
+const Card = ({
+  title, description, link, cover,
+}) => (
   <>
-    <Container image={imageURL}>
-      <Title>Olá título</Title>
-      <Description>
-        Recentemente andei pesquisando um bom host para hospedar minhas aplicações feitas em Reactjs
-        e encontrei o Netlify.
-      </Description>
+    <Container image={cover}>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+      </a>
     </Container>
   </>
 );
 
 Card.propTypes = {
-  imageURL: PropTypes.string.isRequired,
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default Card;

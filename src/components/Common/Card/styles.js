@@ -8,10 +8,11 @@ export const Container = styled.div`
   flex-direction: column;
   background-image: url(${props => props.image});
   background-size: cover;
-  width: calc(100% * (1 / 4) - 10px - 1px);
+  width: ${props => props.theme.card.width};
   height: ${props => props.theme.card.height};
   margin: ${props => props.theme.card.margin};
   border-radius: ${props => props.theme.card.borderRadius};
+  background-position: center;
 
   @media only screen and (max-width: 1140px) {
     width: calc(100% - 15em);
@@ -27,7 +28,7 @@ export const Container = styled.div`
 
   &:hover {
     transform: translateY(-20px);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(46, 49, 109, 0.2);
   }
 
   &::before {
@@ -44,8 +45,9 @@ export const Container = styled.div`
 export const Title = styled.h1`
   margin: 1em;
   position: absolute;
-  bottom: 2.5em;
-  width: 100%;
+  bottom: 15%;
+  width: 90%;
+  font-size: 1.5rem;
   font-family: ${props => props.theme.default.fontFamily};
   color: #fff;
   text-transform: uppercase;
@@ -70,8 +72,8 @@ export const Description = styled.p`
   font-family: ${props => props.theme.default.fontFamily};
   position: absolute;
   bottom: 0;
-  margin: 3em;
-  font-size: 0.75rem;
+  margin: 2.5em;
+  font-size: 0.85rem;
   width: 80%;
   color: #fff;
 `;

@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
- /* Reset */
   * {
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@ export default createGlobalStyle`
 
   body {
     background-image: ${props => props.theme.default.colors.gradient};
-    background: #4e54c8;  
+    background: ${props => props.theme.default.colors.primary};  
     width: 100%;
     height: 100%;
   }
