@@ -9,8 +9,10 @@ import theme from './styles/theme';
 const App = () => (
   <>
     <ThemeProvider theme={theme}>
-      <BlogPage />
-      <GlobalStyle />
+      <>
+        <BlogPage />
+        <GlobalStyle />
+      </>
     </ThemeProvider>
   </>
 );
