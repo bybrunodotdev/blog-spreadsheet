@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  webapp:
+    container_name: blog_sheets
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/app
+    working_dir: /usr/app
+    environment:
+      - NODE_ENV=development
