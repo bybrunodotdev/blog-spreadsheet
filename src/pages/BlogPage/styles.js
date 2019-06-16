@@ -6,7 +6,7 @@ export const Container = styled.main`
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 100%;
+  margin-top: 2rem;
 
   @media only screen and (max-width: 1140px) {
     flex-direction: column;

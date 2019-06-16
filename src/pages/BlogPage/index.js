@@ -8,6 +8,15 @@ const cover = 'https://images.pexels.com/photos/2439595/pexels-photo-2439595.jpe
 
 const BlogPage = () => (
   <Container>
+    <div className="circles">
+      <li />
+      <li />
+      <li />
+      <li />
+      <li />
+      <li />
+      <li />
+    </div>
     <Card imageURL={cover} />
     <Card imageURL={cover} />
     <Card imageURL={cover} />

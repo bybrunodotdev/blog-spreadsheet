@@ -1,7 +1,7 @@
 export default {
   default: {
     colors: {
-      gradient: 'linear-gradient(to bottom left, #c471f5, #fa71cd)',
+      gradient: 'linear-gradient(to left, #8f94fb, #4e54c8)',
     },
     fontFamily: "'Cinzel', serif",
   },

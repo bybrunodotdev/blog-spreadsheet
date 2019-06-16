@@ -4,6 +4,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   flex-grow: 1;
+
   flex-direction: column;
   background-image: url(${props => props.image});
   background-size: cover;
@@ -26,7 +27,7 @@ export const Container = styled.div`
 
   &:hover {
     transform: translateY(-20px);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
   }
 
   &::before {
@@ -34,7 +35,7 @@ export const Container = styled.div`
     position: absolute;
     top: 0;
     border-radius: ${props => props.theme.card.borderRadius};
-    background-image: linear-gradient(transparent, rgba(183, 78, 173, 0.9));
+    background-image: linear-gradient(transparent, rgba(78, 84, 200, 1));
     width: 100%;
     height: 100%;
   }
