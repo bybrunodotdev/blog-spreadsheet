@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import { Container, Title, Description } from './styles';
 
@@ -13,5 +14,9 @@ const Card = ({ imageURL }) => (
     </Container>
   </>
 );
+
+Card.propTypes = {
+  imageURL: PropTypes.string.isRequired,
+};
 
 export default Card;
